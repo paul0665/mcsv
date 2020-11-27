@@ -5,14 +5,24 @@
     </style>
 
     <script src="js/resize.js"></script>
+    <script src="js/rwd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel=stylesheet type="text/css" href="css/nvb.css">
 
 </head>
 <body>
+<div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
 
 <div id="navbar" style="padding: 30px 10px;">
-    <button id="rwdNav" class="openbtn" onclick="openNav()">☰</button> <!--RWD左上選單-->
+    <div style="float: left;">
+        <button id="rwdNav" class="openbtn" onclick="openNav()">☰</button> <!--RWD左上選單-->
+    </div>
     <a href="#default" id="logo" style="font-size: 25px;">CompanyLogo</a>
     <div id="navbar-right">
         <a href="projects.html">開源專案</a>
@@ -21,7 +31,7 @@
     <div id="navbar-right">
         <div class="dropdown">
             <button class="dropbtn">其他連結</button>
-            <div class="dropdown-content">
+            <div id="dropdown-content" class="dropdown-content">
                 <a href="https://www.mc-serverworld.com/">mc-serverworld官網</a>
                 <a href="https://mc-goodtime.mc-serverworld.com/">mc-goodtime官網</a>
                 <a href="https://www.chiliasmstudio.com/dynmap/web/">Lobby小地圖</a>
