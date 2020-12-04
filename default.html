@@ -2,17 +2,18 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <style>
-    </style>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <script src="js/resize.js"></script>
     <link rel=stylesheet type="text/css" href="css/nvb.css">
+    <script src="js/resize.js"></script>
+    <script src="js/rwd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>首頁</title>
 </head>
 
 <body>
 <iframe src="head.html"
-        onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        onload="this.before((this.contentDocument.body||this.contentDocument));this.remove()" ></iframe>
 
 <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
     <p><b>main page!</b></p>
