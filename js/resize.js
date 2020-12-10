@@ -5,7 +5,7 @@ window.onscroll = function() {scrollFunction()};
 window.onresize = function () {rwd_Phone()};
 
 function scrollFunction() {
-  if(document.body.clientWidth<580){
+  if(document.body.clientWidth<1500){
     document.getElementById("MainNavbar").style.padding = "30px 10px";
     document.getElementById("logo").style.fontSize = "25px";
     return;
