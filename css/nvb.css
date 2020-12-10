@@ -142,7 +142,7 @@ body {
   width: 0;
   position: fixed;
   z-index: 100;
-  height: 250px;
+  height: auto;
   top: 0;
   left: 0;
   background-color: #111;
@@ -154,7 +154,7 @@ body {
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 50px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -166,19 +166,21 @@ body {
 
 .sidepanel .closebtn {
   position: absolute;
-  top: 17px;
-  left: 9px;
+  text-align: center;
+  top: 30px;
+  left: -16px;
   /*padding: 30px 50px;*/
-  font-size: 36px;
+  font-size: 50px;
 }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 50px;
   cursor: pointer;
   background-color: #111;
   color: #ffffff;
   padding: 10px 15px;
   border: none;
+  text-align: center;
 }
 
 .openbtn:hover {
