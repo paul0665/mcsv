@@ -181,7 +181,7 @@ body {
   color: #f1f1f1;
 }
 
-.sidepanel .closebtn {
+.sidepanel .FilterCloseBtn {
   position: absolute;
   text-align: center;
   top: 30px;

@@ -18,6 +18,7 @@
     <link rel=stylesheet type="text/css" href="css/project.css">
     <script src="js/resize.js"></script>
     <script src="js/rwd.js"></script>
+    <script src="js/ProjectRWDFilter.js"></script>
     <script src="js/ProjectClassAdder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -28,72 +29,81 @@
 
 <div class="main"style="margin-top:230px">
 
-    <h1>Active projects</h1>
+    <h1>Open source projects</h1>
     <hr>
 
+    <div id="RwdFilter" class="FilterOverlay">
+        <div class="FilterOverlay-content">
+            <a onclick="filterSelection('all');closeRwdFilter()" href="#"> 顯示所有</a>
+            <a onclick="filterSelection('plugins');closeRwdFilter()" href="#"> 插件</a>
+            <a onclick="filterSelection('unity');closeRwdFilter()" href="#"> Unity</a>
+            <a onclick="filterSelection('machinelearning');closeRwdFilter()" href="#"> 深度學習</a>
+            <a onclick="filterSelection('deprecatedplugins');closeRwdFilter()" href="#"> 已棄用</a>
+        </div>
+    </div>
+    <span style="font-size:50px;cursor:pointer;display: none" onclick="openRwdFilter()">&#9776; Filter</span>
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('plugins')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
+        <button class="btn active" onclick="filterSelection('all')"> 顯示所有</button>
+        <button class="btn" onclick="filterSelection('plugins')"> 插件</button>
+        <button class="btn" onclick="filterSelection('unity')"> Unity</button>
+        <button class="btn" onclick="filterSelection('machinelearning')"> 深度學習</button>
+        <button class="btn" onclick="filterSelection('deprecatedplugins')"> 已棄用</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
     <div class="row">
         <div class="column plugins">
             <div class="content">
-                <img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%">
-                <h4>worldMIS</h4>
-                <p>Lorem ipsum dolor..</p>
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
+                <h4>worldMISF</h4>
+                <p>具彈性且自動化的伺服器整合管理架構</p>
             </div>
         </div>
         <div class="column plugins">
             <div class="content">
-                <img src="img/serverworld-logo.png" alt="worldMISF-libs" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF-libs"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>worldMISF-libs</h4>
-                <p>Lorem ipsum dolor..</p>
+                <p>worldMISF的依賴函式庫</p>
             </div>
         </div>
-        <div class="column nature">
+        <div class="column plugins">
             <div class="content">
-                <img src="../w3images/nature.jpg" alt="Nature" style="width:100%">
-                <h4>Forest</h4>
-                <p>Lorem ipsum dolor..</p>
+                <a href="https://github.com/mc-serverworld/worldIdiot"><img src="img/serverworld-logo-old.png" alt="worldMISF" style="width:100%"></a>
+                <h4>worldIdiot</h4>
+                <p>使用資料庫的代理端玩家管理程式</p>
             </div>
         </div>
-
         <div class="column cars">
             <div class="content">
-                <img src="../w3images/cars1.jpg" alt="Car" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>Retro</h4>
                 <p>Lorem ipsum dolor..</p>
             </div>
         </div>
         <div class="column cars">
             <div class="content">
-                <img src="../w3images/cars2.jpg" alt="Car" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>Fast</h4>
                 <p>Lorem ipsum dolor..</p>
             </div>
         </div>
         <div class="column cars">
             <div class="content">
-                <img src="../w3images/cars3.jpg" alt="Car" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>Classic</h4>
                 <p>Lorem ipsum dolor..</p>
             </div>
         </div>
-
         <div class="column people">
             <div class="content">
-                <img src="../w3images/people1.jpg" alt="Car" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>Girl</h4>
                 <p>Lorem ipsum dolor..</p>
             </div>
         </div>
         <div class="column people">
             <div class="content">
-                <img src="../w3images/people2.jpg" alt="Car" style="width:100%">
+                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>Man</h4>
                 <p>Lorem ipsum dolor..</p>
             </div>
@@ -111,7 +121,7 @@
     <!-- END MAIN -->
 </div>
 
-<div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+<div style="margin-top:21000px;padding:15px 15px 2500px;font-size:30px">
     <p><b>project!</b></p>
     <p>Scroll down this frame to see the effect!</p>
 </div>
