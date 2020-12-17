@@ -15,14 +15,101 @@
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link rel=stylesheet type="text/css" href="css/nvb.css">
+    <link rel=stylesheet type="text/css" href="css/project.css">
     <script src="js/resize.js"></script>
     <script src="js/rwd.js"></script>
+    <script src="js/ProjectClassAdder.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 <iframe src="head.html"
         onload="this.before((this.contentDocument.body||this.contentDocument));this.remove()"></iframe>
+
+<div class="main"style="margin-top:230px">
+
+    <h1>Active projects</h1>
+    <hr>
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('plugins')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column plugins">
+            <div class="content">
+                <img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%">
+                <h4>worldMIS</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column plugins">
+            <div class="content">
+                <img src="img/serverworld-logo.png" alt="worldMISF-libs" style="width:100%">
+                <h4>worldMISF-libs</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="../w3images/nature.jpg" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="../w3images/cars1.jpg" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="../w3images/cars2.jpg" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="../w3images/cars3.jpg" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="../w3images/people1.jpg" alt="Car" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="../w3images/people2.jpg" alt="Car" style="width:100%">
+                <h4>Man</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="../w3images/people3.jpg" alt="Car" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+</div>
 
 <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
     <p><b>project!</b></p>

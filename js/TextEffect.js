@@ -10,7 +10,8 @@
 function myWebSite() {
 
     var MainText = "myWebSite";
-    var SubText = "Demo of website "
+    var SubText = "Demo of website"
+    var SubTextEgg = "Light attracts bugs"
     var i = 0;
     var printMain = setInterval(function () {
         document.getElementById("myWebSiteText").innerHTML = document.getElementById("myWebSiteText").innerHTML + MainText.substr(i, 1).toString();
@@ -20,7 +21,13 @@ function myWebSite() {
         ConsolePrinter(SubText,"myWebSiteTextLine");
         clearInterval(printMain)
         setTimeout(    function (){
-            ConsolePrinter(SubText,"myWebSiteTextLine")
+            ConsolePrinter(SubTextEgg,"myWebSiteTextLine");
+            setTimeout(function (){
+                setInterval(function () {
+                    ConsolePrinter(SubText,"myWebSiteTextLine")
+                },SubText.length*300)
+            },SubTextEgg.length*300)
+
         },SubText.length*300)
     },MainText.length*300)
 
