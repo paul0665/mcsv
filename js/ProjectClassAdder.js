@@ -8,15 +8,13 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-filterSelection("all")
 function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("column");
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {
         RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1)
-            AddClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
     }
 }
 
@@ -25,8 +23,7 @@ function AddClass(element, name) {
     array1 = element.className.split(" ");
     array2 = name.split(" ");
     for (i = 0; i < array2.length; i++) {
-        if (array1.indexOf(array2[i]) == -1)
-            element.className += " " + array2[i];
+        if (array1.indexOf(array2[i]) == -1){element.className += " " + array2[i];}
     }
 }
 
@@ -40,17 +37,5 @@ function RemoveClass(element, name) {
         }
     }
     element.className = array1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
 }
 

@@ -131,3 +131,7 @@ h1 {
         right: 35px;
     }
 }
+
+@media screen and (min-width: 1501px) {
+    .FilterOverlayOpenBtn {display: none;}
+}

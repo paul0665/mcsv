@@ -41,9 +41,9 @@
             <a onclick="filterSelection('deprecatedplugins');closeRwdFilter()" href="#"> 已棄用</a>
         </div>
     </div>
-    <span style="font-size:50px;cursor:pointer;display: none" onclick="openRwdFilter()">&#9776; Filter</span>
+    <span class="FilterOverlayOpenBtn" style="font-size:50px;cursor:pointer;" onclick="openRwdFilter()">&#9776; Filter</span>
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> 顯示所有</button>
+        <button class="btn" onclick="filterSelection('all')"> 顯示所有</button>
         <button class="btn" onclick="filterSelection('plugins')"> 插件</button>
         <button class="btn" onclick="filterSelection('unity')"> Unity</button>
         <button class="btn" onclick="filterSelection('machinelearning')"> 深度學習</button>
@@ -125,6 +125,19 @@
     <p><b>project!</b></p>
     <p>Scroll down this frame to see the effect!</p>
 </div>
+<script>
+    filterSelection("all")
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("btn active");
+            current[0].className = current[0].className.replace("btn active", "btn");
+            this.className += "btn active";
+        });
+    }
+</script>
 
 </body>
 
