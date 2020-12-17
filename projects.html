@@ -43,7 +43,7 @@
     </div>
     <span class="FilterOverlayOpenBtn" style="font-size:50px;cursor:pointer;" onclick="openRwdFilter()">&#9776; Filter</span>
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> 顯示所有</button>
+        <button class="btn FilterSelected" onclick="filterSelection('all')"> 顯示所有</button>
         <button class="btn" onclick="filterSelection('plugins')"> 插件</button>
         <button class="btn" onclick="filterSelection('unity')"> Unity</button>
         <button class="btn" onclick="filterSelection('machinelearning')"> 深度學習</button>
@@ -132,9 +132,9 @@
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; btns.length > i; i++) {
         btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("btn active");
-            current[0].className = current[0].className.replace("btn active", "btn");
-            this.className += "btn active";
+            var current = document.getElementsByClassName("FilterSelected");
+            current[0].className = current[0].className.replace(" FilterSelected", "");
+            this.className += " FilterSelected";
         });
     }
 </script>
