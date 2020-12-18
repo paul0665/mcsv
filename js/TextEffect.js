@@ -22,11 +22,13 @@ function myWebSite() {
         clearInterval(printMain)
         setTimeout(    function (){
             ConsolePrinter(SubTextEgg,"myWebSiteTextLine");
+            document.getElementById("eggimg").style.display = "block";
             setTimeout(function (){
                 setInterval(function () {
                     ConsolePrinter(SubText,"myWebSiteTextLine")
                 },SubText.length*300)
-            },SubTextEgg.length*300)
+                document.getElementById("eggimg").style.display = "none";
+            },SubTextEgg.length*200)
 
         },SubText.length*300)
     },MainText.length*300)
