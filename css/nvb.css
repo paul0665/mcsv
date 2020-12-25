@@ -193,15 +193,15 @@ body {
 .openbtn {
   font-size: 50px;
   cursor: pointer;
-  background-color: #111;
-  color: #ffffff;
+  background-color: #27282c;
+  color: #7f7b7b;
   padding: 10px 15px;
   border: none;
   text-align: center;
 }
 
 .openbtn:hover {
-  background-color:#444;
+  color: #c7c2c2;
 }
 
 /* default welcome image*/
