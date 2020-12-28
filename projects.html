@@ -39,7 +39,7 @@
             <a onclick="filterSelection('plugins');closeRwdFilter()" href="#"> 插件</a>
             <a onclick="filterSelection('unity');closeRwdFilter()" href="#"> Unity</a>
             <a onclick="filterSelection('machinelearning');closeRwdFilter()" href="#"> 深度學習</a>
-            <a onclick="filterSelection('deprecatedplugins');closeRwdFilter()" href="#"> 已棄用</a>
+            <a onclick="filterSelection('deprecated');closeRwdFilter()" href="#"> 已棄用</a>
         </div>
     </div>
     <span class="FilterOverlayOpenBtn" style="font-size:50px;cursor:pointer;" onclick="openRwdFilter()">&#9776; Filter</span>
@@ -48,7 +48,7 @@
         <button class="btn" onclick="filterSelection('plugins')"> 插件</button>
         <button class="btn" onclick="filterSelection('unity')"> Unity</button>
         <button class="btn" onclick="filterSelection('machinelearning')"> 深度學習</button>
-        <button class="btn" onclick="filterSelection('deprecatedplugins')"> 已棄用</button>
+        <button class="btn" onclick="filterSelection('deprecated')"> 已棄用</button>
     </div>
 
     <!-- Portfolio Gallery Grid -->
@@ -58,7 +58,7 @@
                 <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
                 <h4>worldMISF</h4>
                 <p>具彈性且自動化的伺服器整合管理架構</p>
-                <a class="github-button" href="https://github.com/mc-serverworld/worldSocket" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @mc-serverworld on GitHub">view on github</a>
+                <a class="github-button" href="https://github.com/mc-serverworld/worldSocket" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="GitHub">view on github</a>
                 <a href="https://github.com/mc-serverworld/worldSocket/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mc-serverworld/worldSocket" alt="worldSocket"></a>
                 <a href="https://jitpack.io/#mc-serverworld/worldSocket"><img src="https://jitpack.io/v/mc-serverworld/worldSocket.svg" alt="worldSocket"></a>
                 <a>awfwfaawfwaffw</a>
@@ -71,30 +71,34 @@
         </div>
         <div class="column plugins">
             <div class="content">
-                <a href="https://github.com/mc-serverworld/worldMISF-libs"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
+                <a href="https://github.com/mc-serverworld/worldMISF-libs"><img src="img/serverworld-logo.png" alt="worldMISF-libs" style="width:100%"></a>
                 <h4>worldMISF-libs</h4>
                 <p>worldMISF的依賴函式庫</p>
+                <a class="github-button" href="https://github.com/mc-serverworld/worldMISF-lib" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="GitHub">view on github</a>
             </div>
         </div>
         <div class="column plugins">
             <div class="content">
-                <a href="https://github.com/mc-serverworld/worldIdiot"><img src="img/serverworld-logo-old.png" alt="worldMISF" style="width:100%"></a>
+                <a href="https://github.com/mc-serverworld/worldIdiot"><img src="img/serverworld-logo-old.png" alt="worldIdiot" style="width:100%"></a>
                 <h4>worldIdiot</h4>
                 <p>使用資料庫的代理端玩家管理程式</p>
+                <a class="github-button" href="https://github.com/mc-serverworld/worldIdiot" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="GitHub">view on github</a>
             </div>
         </div>
-        <div class="column cars">
+        <div class="column machinelearning">
             <div class="content">
-                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
-                <h4>Retro</h4>
-                <p>Lorem ipsum dolor..</p>
+                <a href="https://github.com/mc-serverworld/worldTensorFlowJavaEx"><img src="img/TensorFlowWithJavaLogo.png" alt="worldTensorFlowJavaEx" style="width:100%"></a>
+                <h4>TensorFlowJavaEx</h4>
+                <p>使用java編寫TensorFlow的測試專案</p>
+                <a class="github-button" href="https://github.com/mc-serverworld/worldTensorFlowJavaEx" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="GitHub">view on github</a>
             </div>
         </div>
-        <div class="column cars">
+        <div class="column unity">
             <div class="content">
-                <a href="https://github.com/mc-serverworld/worldMISF"><img src="img/serverworld-logo.png" alt="worldMISF" style="width:100%"></a>
-                <h4>Fast</h4>
-                <p>Lorem ipsum dolor..</p>
+                <a href="https://github.com/paul0665/Unity-HelloWorld1"><img src="img/Nvidia%20BreadScene4.png" alt="Nvidia%20BreadScene4" style="width:100%"><img src="img/Nvidia%20BreadScene3.png" alt="Nvidia%20BreadScene3" style="width:100%"></a>
+                <h4>Unity-HelloWorld1(Nvidia Bread)</h4>
+                <p>光線追蹤/光線反射測試</p>
+                <a class="github-button" href="https://github.com/paul0665/Unity-HelloWorld1" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="GitHub">view on github</a>
             </div>
         </div>
         <div class="column cars">
@@ -118,21 +122,15 @@
                 <p>Lorem ipsum dolor..</p>
             </div>
         </div>
-        <div class="column deprecatedplugins">
+        <div class="column deprecated">
             <div class="content">
                 <a href="https://github.com/mc-serverworld/worldSocket"><img src="img/serverworld-logo-old.png" alt="worldSocket" style="width:100%"></a>
                 <h4>worldSocket(已棄用)</h4>
                 <p>主從式Socket訊息傳輸系統</p>
                 <!-- Place this tag where you want the button to render. -->
-                <div style="margin-top: 5px;">
-                    <a class="github-button" href="https://github.com/mc-serverworld/worldSocket" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @mc-serverworld on GitHub">view on github</a>
-                </div>
-                <div style="margin-top: 5px;">
+                <a class="github-button" href="https://github.com/mc-serverworld/worldSocket" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @mc-serverworld on GitHub">view on github</a>
                     <a href="https://github.com/mc-serverworld/worldSocket/blob/master/LICENSE"><img src="https://img.shields.io/github/license/mc-serverworld/worldSocket" alt="worldSocket"></a>
-                </div>
-                <div style="margin-top: 5px;">
                     <a href="https://jitpack.io/#mc-serverworld/worldSocket"><img src="https://jitpack.io/v/mc-serverworld/worldSocket.svg" alt="worldSocket"></a>
-                </div>
             </div>
         </div>
         <!-- END GRID -->
