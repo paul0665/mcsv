@@ -8,17 +8,18 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "500px";
-    document.getElementById("MainNavbar").style.display = "none";
+function closeOverLayNav() {
+    document.getElementById("myNav").style.width = "0%";
 }
-
-function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-    document.getElementById("MainNavbar").style.display = "initial";
+function toggleOverLayNav(){
+    if(document.getElementById("myNav").style.width <= "10%")
+        document.getElementById("myNav").style.width = "100%";
+    else
+        document.getElementById("myNav").style.width = "0%";
 }
-
-function setSideInitial(){
-    if(document.getElementById("mySidepanel").is .finished)
-    document.getElementById("MainNavbar").style.display = "initial";
+function toggleLinks(){
+    if(document.getElementById("links").style.display == "none")
+        document.getElementById("links").style.display = "initial";
+    else
+        document.getElementById("links").style.display = "none";
 }
