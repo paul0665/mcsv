@@ -15,6 +15,7 @@
 body {
     background-color: #f1f1f1;
     font-family: Arial;
+    width: 100%;
 }
 
 /* Center website */
@@ -30,6 +31,7 @@ h1 {
 
 .row {
     margin: 10px -16px;
+    width: 100%;
 }
 
 /* Add padding BETWEEN each column */
@@ -42,6 +44,7 @@ h1 {
 .column {
     float: left;
     width: 50%;
+    height: 800px;
     display: none; /* Hide all elements by default */
 }
 
@@ -56,7 +59,7 @@ h1 {
 .content {
     background-color: white;
     padding: 10px;
-    height: 675px;
+    height: 800px;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -140,6 +143,13 @@ h1 {
 .content::-webkit-scrollbar-track {background: #f1f1f1;}
 .content::-webkit-scrollbar-thumb {background: #888;}
 .content::-webkit-scrollbar-thumb:hover {background: #555;}
+.FilterBtnContainer{display: none;}
+.content h4{
+    font-size: 40px;
+}
+.content {
+    font-size: 30px;
+}
 
 @media screen and (min-width: 1501px) {
     .github-buttons{display: initial}
@@ -147,5 +157,13 @@ h1 {
     .FilterOverlayOpenBtn {display: none;}
     .column {width: 33.3%;}
     .content::-webkit-scrollbar {width: 10px;}
+    .FilterBtnContainer{display: initial;}
+    .content h4{
+        font-size: 30px;
+    }
+    .content {
+        font-size: 20px;
+        height: 675px;
+    }
 }
 
