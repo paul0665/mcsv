@@ -127,7 +127,7 @@ h1 {
     right: 45px;
     font-size: 60px;
 }
-
+/*
 @media screen and (max-height: 450px) {
     .FilterOverlay {overflow-y: auto;}
     .FilterOverlay a {font-size: 20px}
@@ -137,6 +137,7 @@ h1 {
         right: 35px;
     }
 }
+*/
 .github-buttons{display: none}
 .content span{display: none;}
 .content::-webkit-scrollbar {width: 0px;}
