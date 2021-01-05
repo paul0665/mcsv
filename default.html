@@ -15,6 +15,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <link rel=stylesheet type="text/css" href="css/nvb.css"/>
     <link rel="stylesheet" type="text/css" href="css/default.css"/>
+    <script src="js/defaultRwd.js"></script>
     <script src="js/resize.js"></script>
     <script src="js/rwd.js"></script>
     <script src="js/TextEffect.js"></script>
@@ -30,15 +31,38 @@
     <p style="position: relative;font-size: 80px;text-align: center;"><b id="myWebSiteText"></b></p>
     <p style=" text-align: center;"><b id="myWebSiteTextLine" style="font-size: 40px;text-align: center;color: white;background-color: #111111;">&gt_&ensp;</b></p>
     <img src="img/nyan-cat.gif" alt="nyan-cat" id="eggimg" style="display: none; margin-left: auto;margin-right: auto;position: fixed"/>
-    <div style="width: 100%; margin-top: 300px;">
-        <img src="img/buildmaven.gif" alt="buildmaven" style="max-width: 40%;right: 10%;position: absolute"/>
-        <div class="mainsite-content1" style="width: 30%">
-            <div style="font-weight: bold">這是什麼</div>
-            <div style="margin-top: 10px"><a> 這是myWebSite,一個網頁的Domo</a></div>
-            <div style="margin-top: 10px"><a> 主要用於技術展示</a></div>
+    <div style="width: 90%; margin-top: 300px;margin-left: 5%;margin-right: 5%;">
+        <div>
+            <div class="floatLeft">
+                <a style="font-weight: bold;">這是什麼</a><br />
+                這是myWebSite,一個網頁的Domo<br />
+                主要用於技術展示<br />
+            </div>
+        </div>
+        <div>
+            <div id="fullWidthWhenPhone" class="floatRight" style="width: 70%;">
+                <img src="img/buildmaven.gif" alt="buildmaven" style="height: auto;width: 100%;"/>
+            </div>
         </div>
 
 
+        <!-- <div>
+            <div class="hovcontainer" style="width: 30%;float: left">
+                    <div style="font-weight: bold">這是什麼</div>
+                    <div style="margin-top: 10px"><a> 這是myWebSite,一個網頁的Domo</a></div>
+                    <div style="margin-top: 10px"><a> 主要用於技術展示</a></div>
+            </div>
+            <div class="hovcontainer" style="float: right">
+                    <img src="img/buildmaven.gif" alt="buildmaven" style="height: 300px;max-width: 50%;"/>
+            </div>
+        </div>
+        <div style="width: 100%;min-height: 350px;overflow: hidden;">
+
+            <div style="width: 30%;background-image: url(img/buildmaven.gif);">
+                <img src="img/buildmaven.gif" alt="buildmaven" style="max-width: 30%;height: 300px"/>
+            </div>
+
+        </div> -->
     </div>
 
 </div>
