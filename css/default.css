@@ -31,6 +31,10 @@ body {
     float: right;
     width: auto;
 }
+
+floatImg70{
+    width: 70%;
+}
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
     .floatLeft{
@@ -39,6 +43,12 @@ body {
     }
     .floatRight{
         float: none;
+        width: 100%;
+    }
+    .centerWhenPhone{
+        text-align: center;
+    }
+    .floatImg70{
         width: 100%;
     }
 }
