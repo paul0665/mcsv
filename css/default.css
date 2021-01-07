@@ -39,6 +39,9 @@ body {
 .floatImg65{
     width: 65%;
 }
+.floatImg60{
+    width: 60%;
+}
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
     .floatLeft{
@@ -56,6 +59,9 @@ body {
         width: 100%;
     }
     .floatImg65{
+        width: 100%;
+    }
+    .floatImg60{
         width: 100%;
     }
 }

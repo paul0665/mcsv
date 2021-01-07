@@ -74,5 +74,6 @@ function rgb(){
         },1)
     setTimeout(function(){
         clearInterval(timer); //clear above interval after 5 seconds
+        document.getElementById("forfun").style.backgroundColor = "#ffffff";
     }, 100);
 }
