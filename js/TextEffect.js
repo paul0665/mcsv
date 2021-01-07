@@ -23,11 +23,14 @@ function myWebSite() {
         setTimeout(    function (){
             ConsolePrinter(SubTextEgg,"myWebSiteTextLine");
             document.getElementById("eggimg").style.display = "block";
+            document.getElementById("forfun").style.backgroundColor = "#242424";
+            rgb();
             setTimeout(function (){
                 setInterval(function () {
                     ConsolePrinter(SubText,"myWebSiteTextLine")
                 },SubText.length*300)
                 document.getElementById("eggimg").style.display = "none";
+                document.getElementById("forfun").style.backgroundColor = "#ffffff";
             },SubTextEgg.length*200)
 
         },SubText.length*300)
@@ -61,4 +64,15 @@ function ConsolePrinter(string, enid){
     setTimeout(function(){
         clearInterval(inv); //clear above interval after 5 seconds
     }, string.length*300);
+}
+function rgb(){
+    var timer = setInterval( function bg () {
+        if(document.getElementById("forfun").style.backgroundColor !== "rgb(255, 255, 255)")
+            document.getElementById("forfun").style.backgroundColor = "rgb(255, 255, 255)";
+        else
+            document.getElementById("forfun").style.backgroundColor = "rgb(0, 0,0)";
+        },1)
+    setTimeout(function(){
+        clearInterval(timer); //clear above interval after 5 seconds
+    }, 100);
 }

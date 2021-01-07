@@ -35,6 +35,10 @@ body {
 .floatImg70{
     width: 70%;
 }
+
+.floatImg65{
+    width: 65%;
+}
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
     .floatLeft{
@@ -49,6 +53,9 @@ body {
         text-align: center;
     }
     .floatImg70{
+        width: 100%;
+    }
+    .floatImg65{
         width: 100%;
     }
 }
