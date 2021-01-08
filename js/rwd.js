@@ -11,14 +11,16 @@
 function closeOverLayNav() {
     document.getElementById("myNav").style.width = "0%";
 }
-function toggleOverLayNav(){
-    if(document.getElementById("myNav").style.width <= "10%")
+
+function toggleOverLayNav() {
+    if (document.getElementById("myNav").style.width <= "10%")
         document.getElementById("myNav").style.width = "100%";
     else
         document.getElementById("myNav").style.width = "0%";
 }
-function toggleLinks(){
-    if(document.getElementById("links").style.display == "none")
+
+function toggleLinks() {
+    if (document.getElementById("links").style.display == "none")
         document.getElementById("links").style.display = "initial";
     else
         document.getElementById("links").style.display = "none";

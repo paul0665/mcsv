@@ -8,52 +8,62 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.floatLeft{
+.floatLeft {
     float: left;
     width: auto;
 }
-.floatRight{
+
+.floatRight {
     float: right;
     width: auto;
 }
 
-.floatImg70{
+.floatImg70 {
     width: 70%;
 }
 
-.floatImg65{
+.floatImg65 {
     width: 65%;
 }
-.floatImg60{
+
+.floatImg60 {
     width: 60%;
 }
+
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
-    .floatLeft{
+    .floatLeft {
         float: none;
         width: 100%;
     }
-    .floatRight{
+
+    .floatRight {
         float: none;
         width: 100%;
     }
-    .centerWhenPhone{
+
+    .centerWhenPhone {
         text-align: center;
     }
-    .floatImg70{
+
+    .floatImg70 {
         width: 100%;
     }
-    .floatImg65{
+
+    .floatImg65 {
         width: 100%;
     }
-    .floatImg60{
+
+    .floatImg60 {
         width: 100%;
     }
 }

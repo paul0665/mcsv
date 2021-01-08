@@ -23,7 +23,9 @@ function AddClass(element, name) {
     array1 = element.className.split(" ");
     array2 = name.split(" ");
     for (i = 0; i < array2.length; i++) {
-        if (array1.indexOf(array2[i]) == -1){element.className += " " + array2[i];}
+        if (array1.indexOf(array2[i]) == -1) {
+            element.className += " " + array2[i];
+        }
     }
 }
 

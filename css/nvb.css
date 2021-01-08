@@ -8,67 +8,69 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-* {box-sizing: border-box;}
+* {
+    box-sizing: border-box;
+}
 
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #27282c;
-  padding: 90px 10px;
-  transition: 0.4s;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 99;
+    overflow: hidden;
+    background-color: #27282c;
+    padding: 90px 10px;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
 }
 
 .navbar a {
-  right: 10px;
-  float: left;
-  color: #7f7b7b;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+    right: 10px;
+    float: left;
+    color: #7f7b7b;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
 .navbar #logo {
-  line-height: initial;
-  font-size: 35px;
-  font-weight: bold;
-  transition: 0.4s;
+    line-height: initial;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.4s;
 }
 
 .navbar a:hover {
-  /*background-color: #ddd;*/
-  color: #c7c2c2;
+    /*background-color: #ddd;*/
+    color: #c7c2c2;
 }
 
 .navbar a.active {
-  background-color: dodgerblue;
-  color: white;
+    background-color: dodgerblue;
+    color: white;
 }
 
 .navbar-right {
-  float: right;
+    float: right;
 }
 
 .dropbtn {
-  border-style:inherit;
-  /*border-color:#f1f1f1;*/
-  background-color: #27282c;
-  color: #7f7b7b;
+    border-style: inherit;
+    /*border-color:#f1f1f1;*/
+    background-color: #27282c;
+    color: #7f7b7b;
 
-  padding: 12px;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 
 }
 
@@ -83,13 +85,13 @@ body {
   次選單中的內容(全域設定)
 */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  position: fixed;
-  background-color: #535252;
-  width:auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: #535252;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 /* 
@@ -97,169 +99,187 @@ body {
   次選單中的內容(各選項)
 */
 .dropdown-content a {
-  width: 100%;
-  color: #3e3d3d;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+    width: 100%;
+    color: #3e3d3d;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #3e3d3d;}
+.dropdown-content a:hover {
+    background-color: #3e3d3d;
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {/*background-color: #3e8e41;*/  color: #c7c2c2;}
+.dropdown:hover .dropbtn { /*background-color: #3e8e41;*/
+    color: #c7c2c2;
+}
 
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
-  .navbar{
-    padding: 30px 10px;
-  }
-  .navbar-right {
-    display: none;
-  }
-  .navbar #logo {
-    line-height: initial;
-    font-size: 50px;
-  }
+    .navbar {
+        padding: 30px 10px;
+    }
+
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar #logo {
+        line-height: initial;
+        font-size: 50px;
+    }
 }
 
 @media screen and (min-width: 1500px) {
-  #rwdNav{
-    display: none;
-  }
-  #mySidepanel{
-    display: none;
-  }
+    #rwdNav {
+        display: none;
+    }
+
+    #mySidepanel {
+        display: none;
+    }
 }
+
 /*
   rwd相關元件
 */
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 100;
-  height: auto;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 50px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidepanel a:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .sidepanel .FilterCloseBtn {
-  position: absolute;
-  text-align: center;
-  top: 30px;
-  left: -16px;
-  /*padding: 30px 50px;*/
-  font-size: 50px;
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    left: -16px;
+    /*padding: 30px 50px;*/
+    font-size: 50px;
 }
 
 .openbtn {
-  font-size: 50px;
-  cursor: pointer;
-  background-color: #27282c;
-  color: #7f7b7b;
-  padding: 10px 15px;
-  border: none;
-  text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: #27282c;
+    color: #7f7b7b;
+    padding: 10px 15px;
+    border: none;
+    text-align: center;
 }
 
 .openbtn:hover {
-  color: #c7c2c2;
+    color: #c7c2c2;
 }
 
 /* default welcome image*/
 .centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 /*overlay*/
 
 .overlay {
-  display: none;
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .overlay a {
-  margin-top: 15px;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    margin-top: 15px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .overlay button {
-  margin-top: 15px;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    margin-top: 15px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
+
 .overlay button:hover, .overlay button:focus {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
 
 @media screen and (max-width: 1500px) {
-  .overlay {display: initial;}
-  .overlay a {font-size: 40px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+    .overlay {
+        display: initial;
+    }
+
+    .overlay a {
+        font-size: 40px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }

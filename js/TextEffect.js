@@ -17,47 +17,48 @@ function myWebSite() {
         document.getElementById("myWebSiteText").innerHTML = document.getElementById("myWebSiteText").innerHTML + MainText.substr(i, 1).toString();
         i++
     }, 300)
-    setTimeout(    function (){
-        ConsolePrinter(SubText,"myWebSiteTextLine");
+    setTimeout(function () {
+        ConsolePrinter(SubText, "myWebSiteTextLine");
         clearInterval(printMain)
-        setTimeout(    function (){
-            ConsolePrinter(SubTextEgg,"myWebSiteTextLine");
+        setTimeout(function () {
+            ConsolePrinter(SubTextEgg, "myWebSiteTextLine");
             document.getElementById("eggimg").style.display = "block";
             document.getElementById("forfun").style.backgroundColor = "#242424";
             rgb();
-            setTimeout(function (){
+            setTimeout(function () {
                 setInterval(function () {
-                    ConsolePrinter(SubText,"myWebSiteTextLine")
-                },SubText.length*300)
+                    ConsolePrinter(SubText, "myWebSiteTextLine")
+                }, SubText.length * 300)
                 document.getElementById("eggimg").style.display = "none";
                 document.getElementById("forfun").style.backgroundColor = "#ffffff";
-            },SubTextEgg.length*200)
+            }, SubTextEgg.length * 200)
 
-        },SubText.length*300)
-    },MainText.length*300)
+        }, SubText.length * 300)
+    }, MainText.length * 300)
 }
 
-function ConsolePrinter(string, enid){
+function ConsolePrinter(string, enid) {
     var i = 0;
     document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML = ">_&ensp;"
     var inv = setInterval(function () {
         document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML.trim();
-        document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML.replaceAll("_","");
-        document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML + string.substr(i, 1).toString()+"_&ensp;";
+        document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML.replaceAll("_", "");
+        document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML + string.substr(i, 1).toString() + "_&ensp;";
         i++
     }, 100);
-    setTimeout(function(){
+    setTimeout(function () {
         clearInterval(inv);
-    }, string.length*300);
+    }, string.length * 300);
 }
-function rgb(){
-    var timer = setInterval( function bg () {
-        if(document.getElementById("forfun").style.backgroundColor !== "rgb(255, 255, 255)")
+
+function rgb() {
+    var timer = setInterval(function bg() {
+        if (document.getElementById("forfun").style.backgroundColor !== "rgb(255, 255, 255)")
             document.getElementById("forfun").style.backgroundColor = "rgb(255, 255, 255)";
         else
             document.getElementById("forfun").style.backgroundColor = "rgb(0, 0,0)";
-        },1)
-    setTimeout(function(){
+    }, 1)
+    setTimeout(function () {
         clearInterval(timer);
         document.getElementById("forfun").style.backgroundColor = "#ffffff";
     }, 100);
