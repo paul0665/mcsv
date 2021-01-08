@@ -17,7 +17,7 @@ window.onresize = function () {
 
 function scrollFunction() {
     if (document.body.clientWidth < 1500) {
-        document.getElementById("logo").style.fontSize = "50px";
+        document.getElementById("logo").style.fontSize = "80px";
         return;
     }
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size

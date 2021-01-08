@@ -134,7 +134,7 @@ body {
 
     .navbar #logo {
         line-height: initial;
-        font-size: 50px;
+        font-size: 80px;
     }
 }
 
@@ -187,7 +187,7 @@ body {
 }
 
 .openbtn {
-    font-size: 50px;
+    font-size: 80px;
     cursor: pointer;
     background-color: #27282c;
     color: #7f7b7b;
@@ -274,7 +274,7 @@ body {
     }
 
     .overlay a {
-        font-size: 40px
+        font-size: 60px
     }
 
     .overlay .closebtn {
