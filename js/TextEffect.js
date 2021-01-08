@@ -35,21 +35,6 @@ function myWebSite() {
 
         },SubText.length*300)
     },MainText.length*300)
-
-    /*setTimeout(function () {
-        var i = 0;
-        var inv = setInterval(function () {
-            //document.getElementById("myWebSiteTextLine").style.position = "50% 50%";
-            document.getElementById("myWebSiteTextLine").style.textAlign = "center";
-            document.getElementById("myWebSiteTextLine").innerHTML = document.getElementById("myWebSiteTextLine").innerHTML.trim();
-            document.getElementById("myWebSiteTextLine").innerHTML = document.getElementById("myWebSiteTextLine").innerHTML.replaceAll("_","");
-            document.getElementById("myWebSiteTextLine").innerHTML = document.getElementById("myWebSiteTextLine").innerHTML + SubText.substr(i, 1).toString()+"_&ensp;";
-            i++
-        }, 100); //delay is in milliseconds
-        setTimeout(function(){
-            clearInterval(inv); //clear above interval after 5 seconds
-        },SubText.length*300);
-    },SubText.length * 300)*/
 }
 
 function ConsolePrinter(string, enid){
@@ -60,9 +45,9 @@ function ConsolePrinter(string, enid){
         document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML.replaceAll("_","");
         document.getElementById(enid).innerHTML = document.getElementById(enid).innerHTML + string.substr(i, 1).toString()+"_&ensp;";
         i++
-    }, 100); //delay is in milliseconds
+    }, 100);
     setTimeout(function(){
-        clearInterval(inv); //clear above interval after 5 seconds
+        clearInterval(inv);
     }, string.length*300);
 }
 function rgb(){
@@ -73,7 +58,7 @@ function rgb(){
             document.getElementById("forfun").style.backgroundColor = "rgb(0, 0,0)";
         },1)
     setTimeout(function(){
-        clearInterval(timer); //clear above interval after 5 seconds
+        clearInterval(timer);
         document.getElementById("forfun").style.backgroundColor = "#ffffff";
     }, 100);
 }

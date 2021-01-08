@@ -15,7 +15,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .navbar {
   overflow: hidden;
   background-color: #27282c;
@@ -115,21 +114,6 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {/*background-color: #3e8e41;*/  color: #c7c2c2;}
 
-/*
-@media screen and (max-width: 580px) {
-  #navbar {
-    padding: 20px 10px !important;
-  }
-  #navbar a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  #navbar-right {
-    float: none;
-  }
-}
-*/
 /* 小於1500px */
 @media screen and (max-width: 1500px) {
   .navbar{
