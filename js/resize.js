@@ -33,8 +33,8 @@ function scrollFunction() {
 
 function rwd_Phone() {
     if (document.body.clientWidth < 1500) {
-        document.getElementById("MainNavbar").style.padding = "30px 10px";
-        document.getElementById("logo").style.fontSize = "50px";
+        //document.getElementById("MainNavbar").style.padding = "30px 10px";
+        //document.getElementById("logo").style.fontSize = "50px";
     }
 }
 
