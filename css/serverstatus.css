@@ -18,6 +18,9 @@
 .cards a {
     width: 100%;
 }
+.cards p{
+    height: 20%;
+}
 .cards a img{
     width: 100%;
 }
