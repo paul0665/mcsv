@@ -11,9 +11,11 @@
 .cards a{
 }
 .cards{
+    border-radius: 5px;
     margin: 10px;
     width: 100%;
     font-size: 50px;
+    background-color: #dddddd;
 }
 .cards a {
     width: 100%;
@@ -31,9 +33,9 @@
 @media screen and (min-width: 1501px) {
     .cards{
         font-size: 20px;
-        margin: 10px;
         float: left;
-        width: 300px;
+        margin: 1.65%;
+        width: 30%;
         height: 150px;
     }
     .cards p img{
